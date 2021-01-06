@@ -15,7 +15,8 @@ lazy val `zio-test-macros` = projectMatrix
       "dev.zio"      %%% "zio-test"       % versions.zio,
       "dev.zio"      %%% "zio-test-sbt"   % versions.zio       % Test
     ),
-    testFrameworks += new TestFramework("zio.test.sbt.ZTestFramework")
+    testFrameworks += new TestFramework("zio.test.sbt.ZTestFramework"),
+    publishTo := sonatypePublishToBundle.value
   )
   .jvmPlatform(Seq(versions.scala212, versions.scala213))
   .jsPlatform(Seq(versions.scala212, versions.scala213))
