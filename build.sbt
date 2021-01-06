@@ -25,6 +25,7 @@ lazy val root = project
   .in(file("."))
   .aggregate(`zio-test-macros`.projectRefs: _*)
   .settings(
+    name := "zio-test-macros",
     publish / skip := true,
     compile / skip := true
   )
