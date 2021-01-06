@@ -22,7 +22,10 @@ Book(Writer()) did not satisfy hasField("author.name", _.author.name, isNonEmpty
 
 ## Usage
 
-The library is cross-built for Scala 2.12 and 2.13, both JVM and Scala.js 1.0 platforms. It is not published to Maven Central yet.
+The library is cross-built for Scala 2.12 and 2.13, both JVM and Scala.js 1.0 platforms. It is published to Maven Central, so you just need to add the following to your `build.sbt`:
+```scala
+libraryDependencies += "com.timushev" %% "zio-test-macros"  % "0.1.0"
+```
 
 ## Credits
 
